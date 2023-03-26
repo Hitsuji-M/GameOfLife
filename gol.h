@@ -16,7 +16,7 @@ typedef struct cell cell;
 
 
 cell** createMatrix(int nbRows, int nbCols);
-void initCells(cell** matrix, int nbRows, int nbCols);
+int initCells(cell** matrix, int nbRows, int nbCols);
 void printMatrix(cell** matrix, int nbRows, int nbCols);
 int lookAround(cell** matrix, int nbRows, int nbCols, int posX, int posY);
 int checkMatrix(cell** matrix, int nbRows, int nbCols);

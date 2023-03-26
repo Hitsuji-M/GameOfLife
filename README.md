@@ -2,7 +2,7 @@
 
 ## Informations
 This project is a simple implementation of [Conway's game of life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) in C.
-No GUI used, everything in the terminal. It created a grid of 50x50 cells, each cells has 1/3 chance to be alive at the start.
+No GUI used, everything in the terminal. It creates a grid of 50x50 cells, each cells has 1/3 chance to be alive at the start.
 
 You can provide a set seed at the execution, otherwise time is used as a seed.
 

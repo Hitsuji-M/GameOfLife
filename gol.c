@@ -8,13 +8,19 @@ cell** createMatrix(int nbRows, int nbCols) {
     return matrix;
 }
 
-void initCells(cell** matrix, int nbRows, int nbCols) {
+int initCells(cell** matrix, int nbRows, int nbCols) {
+    int count = 0;
+    int randNum = 0;
     for (int i =0; i < nbRows; i++) {
         for (int j = 0; j < nbCols; j++) {
-            (matrix[i]+j)->alive = ((rand() % 3 - 1) == 1 ? 1 : 0);
+            randNum = rand() % 3 - 1;
+            if (randNum == 1) {
+                (matrix[i]+j)->alive = TRUE;
+                count++;
+            }
         }
     }
-
+    return count;
 }
 
 void printMatrix(cell** matrix, int nbRows, int nbCols) {

@@ -20,7 +20,7 @@ int main(int argc, char* argv[]) {
 
     srand(seed);
     cell** matrix = createMatrix(nbRows, nbCols);
-    initCells(matrix, nbRows, nbCols);
+    population = initCells(matrix, nbRows, nbCols);
 
     while (TRUE) {
         printMatrix(matrix, nbRows, nbCols);
